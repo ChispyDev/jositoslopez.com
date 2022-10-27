@@ -8,35 +8,48 @@
   right: 0;
   height: 60px;
 }
+.header a{
+  text-decoration: none;
+}
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-family: Calibri;
   padding-top: 40px;
   background-color: rgb(65, 65, 65);
+  height: 3000px;
 }
 .midle-part{
   display:flex;
   align-items: center;
 
-  background-color:rgb(170, 185, 170);
-  color:rgb(0, 0, 0);
+  background-color:rgb(179, 185, 167);
+  color:white;
   padding: 0px 80px;
   margin: 10px 0;
  
   font-size: 32px;
   border-radius: 2px;
+
+  cursor: pointer;
 }
 .presentation{
   margin: 30px 0px;
   height: 500px;
+  width: 80%;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  margin: 30px 0px 20px 0px;
 }
 .presentation-grid{
   display: flex;
   background-color: rgb(40, 40, 40);
   height: 100%;
   width: 800px;
+  margin: 0px 0px;
 }
 .presentation-grid img{
   width: 70%;
@@ -51,4 +64,63 @@ body {
   text-align: center;
   font-size: 18px;
   font-weight: light;
+}
+.skills-header {
+  height: 50px;
+  min-width: 200px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(40, 40, 40); 
+  border-radius: 4px;
+}
+.skills-title{
+  display: flex;
+  height: 30px;
+  background-color: rgb(179, 185, 167);
+  padding: 3px 20px;
+  font-size: 22px;
+  color: white;
+  font-weight: normal;
+  align-items: center;
+  border-radius: 2px;
+}
+.skills-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px 30px;
+  padding: 20px 30px;
+
+}
+@media (max-width: 1000px){
+  .skills-grid{
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 1001px){
+  .skills-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.skill-container{
+  background-color: rgb(40, 40, 40);
+  width: 300px;
+  height: 400px;
+  display: grid;
+  grid-template-rows: 1fr 120px;
+}
+.skill-photo {
+  display: flex;
+}
+.skill-photo img{
+  object-fit: cover;
+  width: 100%;
+}
+.skill-description{
+  text-align: center;
+  font-size: 16px;
+  font-weight: lighter;
+  color: gainsboro;
+  
 }
