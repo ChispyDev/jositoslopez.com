@@ -94,9 +94,14 @@ body {
   padding: 20px 0px;
 
 }
-@media (max-width: 1000px){
+@media (max-width: 650px){
   .skills-grid{
     grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 651px) and (max-width: 1000px){
+  .skills-grid{
+    grid-template-columns: 1fr 1fr;
   }
 }
 @media (min-width: 1001px){
